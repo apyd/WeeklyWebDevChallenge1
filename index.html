@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WWD - Challenge 1</title>
+    <script src="https://kit.fontawesome.com/6a90159ddb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="logo__wrapper">
+        <img src="/assets/logo-s.png" alt="logo-small" class="logo">
+    </header>
+    <main>
+        <div class="form__wrapper">
+            <h2 class="form__header">Register Form</h2>
+            <form class="form__content">
+                <label for="registerUsername" class="form__label"></label>
+                <input type="text" id="registerUsername" placeholder="Username" class="form__input">
+                <label for="registerPassword" class="form__label"></label>
+                <input type="password" id="registerPassword" placeholder="Password" class="form__input">
+                <label for="registerConfirmPassword" class="form__label"></label>
+                <input type="password" id="registerConfirmPassword" placeholder="Confirm Password" class="form__input">
+                <label for="registerEmail" class="form__label"></label>
+                <input type="text" id="registerEmail" placeholder="Email" class="form__input">
+                <label for="registerLocation" class="form__input"></label>
+                <select name="registerLocation" id="registerLocation" class="form__select">
+                    <option value="" class="select__option">Your Location</option>
+                    <option value="Warsaw" class="select__option" >Graz</option>
+                    <option value="Warsaw" class="select__option">Brno</option>
+                    <option value="Warsaw" class="select__option">Berno</option>
+                </select>
+                <input type="checkbox" id="registerTerms" name="checkbox--terms" class="form__checkbox">
+                <label for="registerTerms" class="form__label">I have read and accept the terms of use.</label>
+                <button type="button" class="btn btn--primary">Sign up</button>
+            </form>
+        </div>
+        <div class="form__wrapper">
+            <h2 class="form__header">Send Email</h2>
+            <form class="form__content">
+                <label for="messageName" class="form__label"></label>
+                <input type="text" id="messageName" placeholder="Your Name" class="form__input">
+                <label for="messageMail" class="form__label"></label>
+                <input type="text" id="messageMail" placeholder="Your Email" class="form__input">
+                <label for="messageText" class="form__input"></label>
+                <textarea id="messageText" name="description" rows="15" cols="20" placeholder="Type your message ..."></textarea>
+                <input type="checkbox" id="messageSaveCopy" name="checkbox--terms" class="form__checkbox">
+                <label for="messageSaveCopy" class="form__label">Send a copy to my Email</label>
+                <button type="button" class="btn btn--primary">Send Email</button>
+            </form>
+        </div>
+        <div class="form__wrapper">
+            <h2 class="form__header">Sign In Form</h2>
+            <form class="form__content">
+                <label for="signInLogin" class="form__label"></label>
+                <input type="text" id="signInLogin" placeholder="Username" class="form__input">
+                <label for="signInPassword" class="form__input"></label>
+                <input type="password" id="signInPassword" placeholder="Password" class="form__input">
+                <div class="row">
+                    <input type="checkbox" id="signInRemember" name="checkbox--terms" class="form__checkbox">
+                    <label for="signInRemember" class="form__label">Remember me</label>
+                    <button type="button" class="btn btn--primary">Sign in</button>
+                </div>
+            </form>
+        </div>
+        <div class="form__wrapper">
+            <h2 class="form__header">Recover Form</h2>
+            <form class="form__content">
+                <label for="restoreEmail" class="form__label"></label>
+                <input type="text" id="restoreEmail" placeholder="Enter your Email" class="form__input">
+                <label for="restorePhoneNumber" class="form__input"></label>
+                <input type="text" id="restorePhoneNumber" placeholder="Enter your Phone number" class="form__input">
+                <div class="row">
+                    <button type="button" class="btn btn--primary">Sign in</button>
+                    <button type="button" class="btn btn--primary" disabled>Done</button>
+                </div>
+            </form>
+        </div>
+        <div class="form__container">
+            <h2 class="form__header">Subscribe Form</h2>
+            <form class="form__content">
+                <label for="subscribeEmail" class="form__label"></label>
+                <input type="text" id="subscribeEmail" placeholder="Enter your Email" class="form__input">
+                <div class="row">
+                    <button type="button" class="btn btn--primary">Subscribe</button>
+                    <button type="button" class="btn btn--danger">No, Thanks</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="logo__wrapper">
+        <img src="/assets/logo.png" alt="logo" class="logo">
+    </footer>
+</body>
+</html>
