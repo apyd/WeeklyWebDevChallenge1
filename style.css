@@ -6,7 +6,11 @@ body {
     align-items: center;
     background: url('/assets/background.jpg') no-repeat no-repeat;
     font-size: 16px;
-    font-family: 'Roboto';
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[type='checkbox'] {
+    visibility: hidden;
 }
 
 .logo__wrapper {
@@ -22,43 +26,83 @@ body {
     cursor: pointer;
 }
 
-.form__header {
+.form__header, .btn {
     color: rgb(255,255,255);
     text-align: center;
-    text-shadow: rgb(0,0,0) 1px 1px;
+    text-shadow: rgba(0,0,0,.5) 1px 1px;
+}
+
+.form--border {
+    border: rgba(0,0,0,.3) 20px solid;
+    border-radius: 5px;
 }
 
 .form__content {
     display: flex;
     flex-direction: column;
     padding: 15px;
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: rgb(244,244,244);
 }
 
 .form__input {
-    padding: 10px;
+    padding: 10px 10px 10px 50px;
     margin-bottom: 5px;
 }
 
+.form__label {
+    color: rgb(198,198,198);
+    font-size: .8rem;
+}
 
+.form__select, .form__checkbox, .form__input, .form__textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: 1px solid rgb(198,198,198);
+    border-radius: 5px;
+    font-size: .8rem;
+    color: rgb(198,198,198);
+}
+
+*::placeholder, .form__select {
+    color: rgb(198,198,198);
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.form__select {
+    padding: 10px 10px 10px 50px;
+}
+
+.form__textarea {
+    padding: 10px;
+}
+
+.checkbox__wrapper {
+    display: flex;
+    align-items: center;
+}
 
 .btn {
     padding: 10px 20px;
     color: rgb(255,255,255);
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: 1rem;
-    min-width: 100px;
+    min-width: 130px;
 }
 
 .btn--primary {
-    background-color: rgb(145,203,57);
+    background: rgb(145,203,57);
+    background: linear-gradient(180deg, rgb(145,203,57,1) 0%, rgb(100,174,52,1) 100%);
     border: 1px solid rgb(100,174,52);
 }
 
 .btn--danger {
-    background-color: rgb(241,69,87);
+    background: rgb(241,69,87);
+    background: linear-gradient(180deg, rgb(241,69,87) 0%, rgb(201,75,88) 100%);
     border: 1px solid rgb(201,75,88);
 }
 
