@@ -22,6 +22,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+*:focus {
+    outline: 5px auto var(--black-border-transparent);
+}
+
 .logo__wrapper {
     margin-top: 20px;
 }
@@ -159,9 +163,12 @@ body {
 }
 
 .form__checkbox {
-    visibility: hidden;
-    margin: 0;
-    border: none;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
 }
 
 .form__label--checkbox {
@@ -182,6 +189,11 @@ body {
     border: 1px solid var(--dark-grey);
     border-radius: 5px;
     box-sizing: border-box;
+}
+
+.form__checkbox:focus + .form__label--checkbox::before {
+    outline: 5px auto var(--black-border-transparent);
+    box-shadow: 0 0 8px #5e9ed6;
 }
 
 .form__checkbox:checked + .form__label--checkbox {
