@@ -55,15 +55,19 @@ body {
     min-width: 130px;
 }
 
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+.btn::-moz-focus-inner {
+    border: 0;
+}
+
 .btn--primary {
     background: var(--light-green);
     background: linear-gradient(180deg, var(--light-green) 0%, var(--dark-green) 100%);
     border: 1px solid var(--dark-green);
-}
-
-.btn:disabled {
-    cursor: not-allowed;
-    opacity: .5;
 }
 
 .btn--primary:hover:not(:disabled) {
@@ -106,6 +110,7 @@ body {
     position: relative;
     height: 40px;
     box-sizing: border-box;
+    filter: none;
 }
 
 .form__label {
@@ -210,6 +215,10 @@ body {
 .form__select {
     padding: 10px 10px 10px 50px;
     margin: 2px 0;
+}
+
+.form__select::-moz-focus-inner, .form__select:focus::-moz-focus-inner {
+    border: 0;
 }
 
 .form__select--dropdown {
