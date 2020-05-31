@@ -17,25 +17,25 @@
             <h2 class="form__header">Register Form</h2>
             <div class="form--border">
             <form autocomplete="off" class="form__content">
-                <label for="registerUsername" class="form__label form__label--user"></label>
-                <input type="text" id="registerUsername" name="registerUsername" placeholder="Username" class="form__input">
-                <label for="registerPassword" class="form__label form__label--lock"></label>
-                <input type="password" id="registerPassword" name="registerPassword" placeholder="Password" class="form__input">
-                <label for="registerConfirmPassword" class="form__label form__label--lock"></label>
-                <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" placeholder="Confirm Password" class="form__input">
-                <label for="registerEmail" class="form__label form__label--mail"></label>
-                <input type="text" id="registerEmail" name="registerEmail" placeholder="Email" class="form__input">
+                <div class="input__icons input__icon--user"></div>
+                <input type="text" id="registerUsername" name="registerUsername" placeholder="Username" class="form__input" aria-label="registerUsername">
+                <div class="input__icons input__icon--lock"></div>
+                <input type="password" id="registerPassword" name="registerPassword" placeholder="Password" class="form__input" aria-label="registerPassword">
+                <div class="input__icons input__icon--lock"></div>
+                <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" placeholder="Confirm Password" class="form__input" aria-label="registerConfirmPassword">
+                <div class="input__icons input__icon--mail"></div>
+                <input type="text" id="registerEmail" name="registerEmail" placeholder="Email" class="form__input" aria-label="registerEmail">
                 <span class="form__select--dropdown"></span>
-                <label for="registerLocation" class="form__label form__label--select form__label--location"></label>
-                <select id="registerLocation" name="registerLocation"  class="form__select">
+                <div class="input__icons input__icon--select input__icon--location"></div>
+                <select id="registerLocation" name="registerLocation"  class="form__select" aria-label="registerLocation">
                     <option value="" class="select__option">Your Location</option>
                     <option value="Warsaw" class="select__option" >Graz</option>
                     <option value="Warsaw" class="select__option">Brno</option>
                     <option value="Warsaw" class="select__option">Berno</option>
                 </select>
                 <div class="checkbox__wrapper">
-                    <input type="checkbox" id="registerTerms" name="registerTerms" class="form__checkbox">
-                    <label for="registerTerms" class="form__label--checkbox">I have read and accept the terms of use.</label>
+                    <input type="checkbox" id="registerTerms" name="registerTerms" class="form__checkbox" aria-label="registerTerms">
+                    <div class="input__icon--checkbox">I have read and accept the terms of use.</div>
                 </div>
                 <button type="button" class="btn btn--primary">Sign up</button>
             </form>
@@ -45,15 +45,15 @@
             <h2 class="form__header">Send Email</h2>
             <div class="form--border">
             <form autocomplete="off" class="form__content">
-                <label for="messageName" class="form__label form__label--user"></label>
-                <input type="text" id="messageName" name="messageName" placeholder="Your Name" class="form__input">
-                <label for="messageMail" class="form__label form__label--mail"></label>
-                <input type="text" id="messageMail" name="messageMail" placeholder="Your Email" class="form__input">
-                <label for="messageText" class="form__label--textarea"></label>
-                <textarea id="messageText" name="messageText" rows="15" cols="20" placeholder="Type your message ..." class="form__textarea" ></textarea>
+                <div class="input__icons input__icon--user"></div>
+                <input type="text" id="messageName" name="messageName" placeholder="Your Name" class="form__input" aria-label="messageName">
+                <div class="input__icons input__icon--mail"></div>
+                <input type="text" id="messageMail" name="messageMail" placeholder="Your Email" class="form__input" aria-label="messageMail">
+                <div class="input__icon--textarea"></div>
+                <textarea id="messageText" name="messageText" rows="15" cols="20" placeholder="Type your message ..." class="form__textarea" aria-label="messageText"></textarea>
                 <div class="checkbox__wrapper">
-                    <input type="checkbox" id="messageSaveCopy" name="messageSaveCopy" class="form__checkbox">
-                    <label for="messageSaveCopy" class="form__label--checkbox">Send a copy to my Email</label>
+                    <input type="checkbox" id="messageSaveCopy" name="messageSaveCopy" class="form__checkbox" aria-label="messageSaveCopy">
+                    <div class="input__icon--checkbox">Send a copy to my Email</div>
                 </div>
                 <button type="button" class="btn btn--primary">Send Email</button>
             </form>
@@ -63,14 +63,14 @@
             <h2 class="form__header">Sign In Form</h2>
             <div class="form--border">
             <form autocomplete="off" class="form__content">
-                <label for="signInLogin" class="form__label form__label--user"></label>
-                <input type="text" id="signInLogin" name="signInLogin" placeholder="Username" class="form__input">
-                <label for="signInPassword" class="form__label form__label--lock"></label>
-                <input type="password" id="signInPassword" name="signInPassword" placeholder="Password" class="form__input">
+                <div class="input__icons input__icon--user"></div>
+                <input type="text" id="signInLogin" name="signInLogin" placeholder="Username" class="form__input" aria-label="signInLogin">
+                <div class="input__icons input__icon--lock"></div>
+                <input type="password" id="signInPassword" name="signInPassword" placeholder="Password" class="form__input" aria-label="signInPassword">
                 <div class="row">
                     <div class="checkbox__wrapper">
-                        <input type="checkbox" id="signInRemember" name="signInRemember" class="form__checkbox">
-                        <label for="signInRemember" class="form__label--checkbox">Remember me</label>
+                        <input type="checkbox" id="signInRemember" name="signInRemember" class="form__checkbox" aria-label="signInRemember">
+                        <div class="input__icon--checkbox">Remember me</div>
                     </div>
                     <button type="button" class="btn btn--primary">Sign in</button>
                 </div>
@@ -81,10 +81,10 @@
             <h2 class="form__header">Recover Form</h2>
             <div class="form--border">
             <form autocomplete="off" class="form__content">
-                <label for="restoreEmail" class="form__label form__label--mail"></label>
-                <input type="text" id="restoreEmail" name="restoreEmail" placeholder="Enter your Email" class="form__input">
-                <label for="restorePhoneNumber" class="form__label form__label--mobile"></label>
-                <input type="text" id="restorePhoneNumber" name="restorePhoneNumber" placeholder="Enter your Phone number" class="form__input">
+                <div class="input__icons input__icon--mail"></div>
+                <input type="text" id="restoreEmail" name="restoreEmail" placeholder="Enter your Email" class="form__input" aria-label="restoreEmail">
+                <div class="input__icons input__icon--mobile"></div>
+                <input type="text" id="restorePhoneNumber" name="restorePhoneNumber" placeholder="Enter your Phone number" class="form__input" aria-label="restorePhoneNumber">
                 <div class="row">
                     <button type="button" class="btn btn--primary">Sign in</button>
                     <button type="button" class="btn btn--primary" disabled>Done</button>
@@ -96,8 +96,8 @@
             <h2 class="form__header">Subscribe Form</h2>
             <div class="form--border">
             <form autocomplete="off" class="form__content">
-                <label for="subscribeEmail" class="form__label form__label--mail"></label>
-                <input type="text" id="subscribeEmail" name="subscribeEmail" placeholder="Enter your Email" class="form__input">
+                <div class="input__icons input__icon--mail"></div>
+                <input type="text" id="subscribeEmail" name="subscribeEmail" placeholder="Enter your Email" class="form__input" aria-label="subscribeEmail">
                 <div class="row">
                     <button type="button" class="btn btn--primary">Subscribe</button>
                     <button type="button" class="btn btn--danger">No, Thanks</button>
