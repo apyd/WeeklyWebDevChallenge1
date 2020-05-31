@@ -105,7 +105,7 @@ body {
 }
 
 .form__input {
-    padding: 10px 10px 10px 50px;
+    padding: 10px 10px 10px 65px;
     margin: 0 0 15px 0;
     position: relative;
     height: 40px;
@@ -113,7 +113,9 @@ body {
     filter: none;
 }
 
+
 .form__label {
+    display: flex;
     align-items: center;
     color: var(--dark-grey);
     font-size: .8rem;
@@ -124,7 +126,7 @@ body {
     content: '';
     position: absolute;
     top: 9px;
-    left: 10px;
+    left: 15px;
     height: 20px;
     width: 20px;
 }
@@ -152,9 +154,8 @@ body {
 .form__label::after {
     content: '';
     position: absolute;
-    display: flex;
     top: 9px;
-    left: 40px;
+    left: 50px;
     height: 20px;
     border: .5px solid var(--dark-grey);
 }
@@ -212,13 +213,14 @@ body {
     background: linear-gradient(180deg, var(--light-green) 0%, var(--dark-green) 100%);
 }
 
-.form__select {
-    padding: 10px 10px 10px 50px;
-    margin: 2px 0;
+.form__label--select:before, .form__label--select:after {
+    top: 11px;
 }
 
-.form__select::-moz-focus-inner, .form__select:focus::-moz-focus-inner {
-    border: 0;
+.form__select {
+    padding: 10px 10px 10px 65px;
+    margin: 2px 0;
+    text-indent: .5px;
 }
 
 .form__select--dropdown {
@@ -232,8 +234,8 @@ body {
     height: 10px;
     border-left: 1px solid var(--dark-grey);
     border-bottom: 1px solid var(--dark-grey);
-    top: 12px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
     transform: rotate(-45deg);
 }
 
@@ -245,7 +247,9 @@ body {
     border: 1px solid var(--dark-grey);
     border-radius: 5px;
     font-size: .8rem;
+    font-family: "Open Sans", sans-serif;
     color: var(--dark-grey);
+    font-weight: bold;
 }
 
 *::placeholder, .form__select {
@@ -253,6 +257,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: .8rem;
     font-weight: bold;
+    opacity: 1;
 }
 
 .form__textarea {
@@ -274,6 +279,15 @@ body {
     color: black;
 }
 
-.btn:focus-visible {
-    border: 1px solid black;
+@-moz-document url-prefix() {
+    .form__select {
+        text-indent: -2px;
+    }
+    .form__select::-moz-focus-inner {
+        border: none
+    }
+    .form__select:-moz-focusring {
+        color: transparent;
+        text-shadow: 0px 0px 0px #000;
+    }
 }
