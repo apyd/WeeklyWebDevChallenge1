@@ -1,4 +1,4 @@
-##Weekly Web Dev Challenge - Project 1
+## Weekly Web Dev Challenge - Project 1
 
 Project prepared using HTML5 and CSS3.
 Tested on Firefox, Chrome, Safari, Edge browsers (latest versions available on 13/06/2020)
