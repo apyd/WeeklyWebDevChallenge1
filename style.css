@@ -26,18 +26,53 @@ body {
     outline: none;
 }
 
-/*.forms__wrapper {*/
-/*    display: grid;*/
-/*    grid-template-columns: 400px 400px;*/
-/*}*/
+.forms__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 500px));
+    grid-template-rows: repeat(12, 100px);
+    grid-column-gap: 30px;
+    margin: 20px;
+}
+
+.form__register {
+    grid-column: 1;
+    grid-row: 1 / 6;
+}
+
+.form__email {
+    grid-column: 1;
+    grid-row: 6 / 12;
+}
+
+.form__sign {
+    grid-column: 2;
+    grid-row: 1 / 3;
+}
+
+.form__recover {
+    grid-column: 2;
+    grid-row: 4 / 7;
+}
+
+.form__subscribe {
+    grid-column: 2;
+    grid-row: 7 / 10;
+}
 
 .logo__wrapper {
     margin-top: 20px;
 }
 
+.logo__wrapper--footer {
+    order: 6;
+    grid-column: 2;
+    grid-row: 10 / 12;
+    margin: 0 auto;
+}
+
 .logo {
-    opacity: .6;
-    max-width: 350px;
+    margin: 20px 0;
+    opacity: .3;
 }
 
 .logo:hover {
@@ -47,12 +82,15 @@ body {
 
 .btn {
     padding: 10px 20px;
-    margin: 2px 0;
     color: var(--white);
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     min-width: 130px;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 .btn:disabled {
@@ -111,6 +149,7 @@ body {
     height: 40px;
     box-sizing: border-box;
     filter: none;
+    text-indent: .5px;
 }
 
 .input__icons {
@@ -160,6 +199,7 @@ body {
 }
 
 .checkbox__wrapper {
+    display: flex;
     align-items: center;
     margin: 10px 0;
     box-sizing: border-box;
@@ -220,6 +260,7 @@ body {
     padding: 10px 10px 10px 65px;
     margin: 2px 0;
     text-indent: .5px;
+    height: 40px;
 }
 
 .form__select--dropdown {
@@ -233,7 +274,6 @@ body {
     height: 10px;
     border-left: 1px solid var(--dark-grey);
     border-bottom: 1px solid var(--dark-grey);
-    top: 15px;
     right: 15px;
     transform: rotate(-45deg);
 }
@@ -287,6 +327,19 @@ body {
     }
     .form__select:-moz-focusring {
         color: transparent;
-        text-shadow: 0px 0px 0px #000;
+        text-shadow: 0 0 0 #000;
+    }
+}
+
+@media (max-width: 768px) {
+    .forms__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-items: stretch;
+    }
+
+    .form__wrapper {
+        display: flex;
+        flex-direction: column;
     }
 }
