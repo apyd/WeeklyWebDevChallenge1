@@ -13,10 +13,10 @@ Main aim was to recreate project template using HTML5 and CSS3 and make it respo
 First project for portfolio as a form of exercise on inputs and customizing them across all browsers.
 
 ### Project template
-![Project template screenshot](https://photos.google.com/share/AF1QipP1OhCdidK25hnztjcpGYzkRQK8JqksqIZnUCk1-1K52ULp1WFT62FCWLYLwnQJOw/photo/AF1QipOlY2pJUd1VNPH-ro7Uk7g-WqxIb4ITFwIkSDFK?key=TzZtQ0lyLUxodzhMRkNxOVlYSHozbi1aZlo1TlRB)
+![Project template screenshot](https://user-images.githubusercontent.com/14296768/84596126-33f2dd00-ae5c-11ea-9411-b7d7cbb2714e.png)
 
 ### Project result
-![Project result screenshot](https://photos.google.com/share/AF1QipMYJbmCqESJvzFK-C1QVW6vu9D3KsZNyL6OiMZJd5RgdBX4rzPbxHbPGESTXOpWOw/photo/AF1QipPVlBN33bWFR_8Ww9x5OD3G6TL0Ma8BhcV4Pcop?key=QVlXNHJBeV9PQ1E1UFBQbXd1TzRCSE9NMTJsVGR3)
+![Project result screenshot](https://user-images.githubusercontent.com/14296768/84596144-4a009d80-ae5c-11ea-975a-75e708fc9277.png)
 
 
 
