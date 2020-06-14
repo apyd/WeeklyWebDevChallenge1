@@ -1,5 +1,8 @@
 ## Weekly Web Dev Challenge - Project 1
 
+Challenge group: https://www.facebook.com/groups/940002776068923/
+Project assets: https://drive.google.com/drive/folders/0Bw2hu70L5Ye_QmVSRzJYNkI5VlU
+
 Project prepared using HTML5 and CSS3.
 Tested on Firefox, Chrome, Safari, Edge browsers (latest versions available on 13/06/2020)
 
